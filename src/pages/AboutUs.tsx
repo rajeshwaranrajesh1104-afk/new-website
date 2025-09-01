@@ -22,10 +22,10 @@ const AboutUs = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl lg:text-5xl font-bold text-stone-800 mb-6">
-              From a Mother's Kitchen to a Global Vision
+              From a Mother's Kitchen to a Global Mission
             </h1>
             <p className="text-xl text-stone-600 max-w-3xl mx-auto leading-relaxed">
-              The story of Soul Sip Malts began with a mother's love and her desire to provide the best nutrition for her family using time-honored recipes passed down through generations.
+              Soul Sip Malts was founded by Naveena, a passionate food technologist inspired by her mother's decade-long expertise in food and nutrition. What began as a simple idea to create instant yet nutritious drinks has evolved into a mission – bringing balanced nutrition, antioxidants, and tradition into every home.
             </p>
           </motion.div>
         </div>
@@ -55,13 +55,13 @@ const AboutUs = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl lg:text-4xl font-bold text-stone-800">
-                Naveena's Journey
+                Our Founder's Vision
               </h2>
               <p className="text-stone-600 leading-relaxed">
-                It all started in a humble kitchen where Naveena, a passionate mother and wellness advocate, began experimenting with traditional malt recipes her grandmother had taught her. She noticed how modern families struggled to maintain nutritious diets amidst busy schedules.
+                While the world chases coffee chains and tea franchises, we envisioned something revolutionary: a Healthy Drink Movement. Our malts are meticulously designed for all age groups, blending ancient ingredients with modern convenience and scientific precision.
               </p>
               <p className="text-stone-600 leading-relaxed">
-                Combining ancient wisdom with modern nutritional science, she created instant malt mixes that retained all the goodness of traditional preparation while fitting seamlessly into contemporary lifestyles. Each blend tells a story of love, tradition, and unwavering commitment to family wellness.
+                Whether you want to start a health-focused franchise or simply enjoy wholesome drinks at home, Soul Sip Malts is here to nourish both body and business. Each blend represents our unwavering commitment to bringing traditional wellness into modern lifestyles.
               </p>
               <div className="grid grid-cols-2 gap-4 pt-6">
                 <div className="text-center">

@@ -11,25 +11,25 @@ const Homepage = () => {
       id: 1,
       name: 'Fig Malt',
       image: 'https://images.pexels.com/photos/4198018/pexels-photo-4198018.jpeg?auto=compress&cs=tinysrgb&w=400',
-      price: '$24.99',
-      benefits: ['Rich in fiber', 'Natural sweetness', 'Digestive health'],
-      description: 'Premium fig malt blend for natural energy and wellness'
+      price: '₹390',
+      benefits: ['Rich in nutrients & fiber', 'Supports digestion', 'Strengthens bones', 'Boosts skin health'],
+      description: 'Premium organic fig blend with traditional spices for natural energy and wellness. 200g pack.'
     },
     {
       id: 2,
       name: 'Banana Flower Malt',
       image: 'https://images.pexels.com/photos/5966630/pexels-photo-5966630.jpeg?auto=compress&cs=tinysrgb&w=400',
-      price: '$22.99',
-      benefits: ['Hormonal balance', 'Rich in minerals', 'Traditional remedy'],
-      description: 'Ancient wisdom in modern nutrition for women\'s wellness'
+      price: '₹390',
+      benefits: ['Regulates menstrual cycle', 'Improves enzyme activity', 'Aids digestion & kidney health'],
+      description: 'Ancient banana flower remedy crafted for women\'s wellness and hormonal balance. 200g pack.'
     },
     {
       id: 3,
       name: 'ABC Malt',
       image: 'https://images.pexels.com/photos/4198015/pexels-photo-4198015.jpeg?auto=compress&cs=tinysrgb&w=400',
-      price: '$26.99',
-      benefits: ['Complete nutrition', 'Energy boost', 'Immunity support'],
-      description: 'Our signature blend of almonds, banana, and coconut'
+      price: '₹390',
+      benefits: ['Rich in natural energy', 'Supports blood health', 'Kid-friendly nutrition'],
+      description: 'Apple, Beetroot, Carrot blend perfect for kids and families. Great for smoothies and baking. 200g pack.'
     }
   ];
 
@@ -77,7 +77,7 @@ const Homepage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Instant malt mixes crafted with nature's best – for busy lives, healthy families, and timeless wellness.
+            Premium instant malt mixes crafted with nature's finest ingredients – designed for busy lives, healthy families, and timeless wellness.
           </motion.p>
           <motion.div
             className="flex flex-col sm:flex-row gap-4 justify-center mt-8"

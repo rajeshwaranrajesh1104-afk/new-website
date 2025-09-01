@@ -27,25 +27,25 @@ const Contact = () => {
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Visit Our Store',
-      details: ['123 Wellness Street', 'Healthy City, HC 12345', 'United States'],
+      details: ['43/354 Vivekananda Street', 'Poonga Nagar, Thiruvallur', 'Tamil Nadu 602001'],
       action: 'Get Directions'
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Call Us',
-      details: ['+1 (555) 123-4567', 'Mon-Fri: 9AM-6PM', 'Sat: 10AM-4PM'],
+      details: ['+91 80723 61484', 'Mon-Fri: 9AM-6PM', 'Sat: 10AM-4PM'],
       action: 'Call Now'
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email Us',
-      details: ['hello@soulsipmalts.com', 'support@soulsipmalts.com', 'Response within 24 hours'],
+      details: ['support@soulsipmalts.com', 'Response within 24 hours', 'Professional support team'],
       action: 'Send Email'
     },
     {
       icon: <MessageCircle className="w-6 h-6" />,
       title: 'WhatsApp Order',
-      details: ['+1 (555) 987-6543', 'Quick ordering available', '24/7 customer support'],
+      details: ['+91 80723 61484', 'Quick ordering available', 'Instant customer support'],
       action: 'Chat Now'
     }
   ];

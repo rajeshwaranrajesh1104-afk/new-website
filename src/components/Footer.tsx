@@ -46,10 +46,10 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-white font-semibold">Our Malts</h3>
             <div className="space-y-2">
-              <a href="#" className="block text-stone-400 hover:text-emerald-400 transition-colors">Fig Malt</a>
-              <a href="#" className="block text-stone-400 hover:text-emerald-400 transition-colors">Banana Flower Malt</a>
-              <a href="#" className="block text-stone-400 hover:text-emerald-400 transition-colors">ABC Malt</a>
-              <a href="#" className="block text-stone-400 hover:text-emerald-400 transition-colors">Golden Milk</a>
+              <a href="#" className="block text-stone-400 hover:text-emerald-400 transition-colors">Fig Malt - ₹390</a>
+              <a href="#" className="block text-stone-400 hover:text-emerald-400 transition-colors">Banana Flower Malt - ₹390</a>
+              <a href="#" className="block text-stone-400 hover:text-emerald-400 transition-colors">ABC Malt - ₹390</a>
+              <a href="#" className="block text-stone-400 hover:text-emerald-400 transition-colors">Golden Milk - ₹390 (New!)</a>
             </div>
           </div>
 
@@ -60,17 +60,18 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-emerald-400 mt-1 flex-shrink-0" />
                 <span className="text-stone-400 text-sm">
-                  123 Wellness Street<br />
-                  Healthy City, HC 12345
+                  43/354 Vivekananda Street<br />
+                  Poonga Nagar, Thiruvallur<br />
+                  Tamil Nadu 602001
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                <span className="text-stone-400 text-sm">+1 (555) 123-4567</span>
+                <span className="text-stone-400 text-sm">+91 80723 61484</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                <span className="text-stone-400 text-sm">hello@soulsipmalts.com</span>
+                <span className="text-stone-400 text-sm">support@soulsipmalts.com</span>
               </div>
             </div>
           </div>

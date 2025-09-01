@@ -19,21 +19,21 @@ const Franchise = () => {
 
   const packages = [
     {
-      title: 'Kiosk Model',
-      price: '$15,000',
-      features: ['Premium kiosk setup', 'Initial inventory', 'Training program', 'Marketing materials', '6 months support'],
+      title: 'Kiosk Setup',
+      price: 'Low Investment',
+      features: ['Compact kiosk design', 'Initial malt inventory', 'Basic training program', 'Marketing materials', '6 months support'],
       recommended: false
     },
     {
-      title: 'Retail Stall',
-      price: '$25,000',
-      features: ['Complete stall setup', 'Premium inventory', 'Advanced training', 'Marketing campaign', '12 months support', 'Territory protection'],
+      title: 'Stall Integration',
+      price: 'Medium Investment',
+      features: ['Complete stall setup', 'Full product range', 'Comprehensive training', 'Marketing campaign', '12 months support', 'Territory guidance'],
       recommended: true
     },
     {
-      title: 'Full Store',
-      price: '$45,000',
-      features: ['Complete store setup', 'Full product range', 'Staff training', 'Marketing & advertising', '24 months support', 'Exclusive territory', 'Custom branding'],
+      title: 'Franchise Integration',
+      price: 'Flexible Investment',
+      features: ['Integrate with existing tea/coffee business', 'Full product training', 'Staff development', 'Marketing & advertising', 'Ongoing support', 'Business consultation', 'Custom solutions'],
       recommended: false
     }
   ];
@@ -59,6 +59,16 @@ const Franchise = () => {
           >
             Join our growing family of entrepreneurs bringing traditional wellness to communities across the nation. Build a profitable business while making a positive impact on people's health.
           </motion.p>
+          <motion.div
+            className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto mb-8"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <p className="text-emerald-100 text-lg">
+              <strong>Our Vision:</strong> Empower rural & suburban entrepreneurs while building a global wellness brand that revolutionizes the healthy drinks market.
+            </p>
+          </motion.div>
           <motion.button
             className="bg-white text-emerald-700 hover:bg-stone-100 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
             initial={{ opacity: 0, y: 30 }}
