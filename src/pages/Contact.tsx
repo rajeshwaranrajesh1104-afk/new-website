@@ -243,7 +243,7 @@ const Contact = () => {
               Need to Order Quickly?
             </h2>
             <p className="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
-              Send us a message on WhatsApp for instant ordering and customer support
+              Send us a message on WhatsApp at +91 80723 61484 for instant ordering and customer support
             </p>
             <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center space-x-2 mx-auto">
               <MessageCircle className="w-5 h-5" />
