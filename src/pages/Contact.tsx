@@ -33,7 +33,7 @@ const Contact = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Call Us',
-      details: ['+91 80723 61484', 'Mon-Fri: 9AM-6PM', 'Sat: 10AM-4PM'],
+      details: ['+91 8072361484', 'Mon-Fri: 9AM-6PM', 'Sat: 10AM-4PM'],
       action: 'Call Now'
     },
     {
@@ -45,7 +45,7 @@ const Contact = () => {
     {
       icon: <MessageCircle className="w-6 h-6" />,
       title: 'WhatsApp Order',
-      details: ['+91 80723 61484', 'Quick ordering available', 'Instant customer support'],
+      details: ['+91 8072361484', 'Quick ordering available', 'Instant customer support'],
       action: 'Chat Now'
     }
   ];
@@ -219,7 +219,7 @@ const Contact = () => {
                     <span>Saturday</span>
                     <span>10:00 AM - 4:00 PM</span>
                   </div>
-                  <div className="flex justify-between">
+                <span className="text-stone-400 text-sm">+91 8072361484</span>
                     <span>Sunday</span>
                     <span>Closed</span>
                   </div>
@@ -243,9 +243,12 @@ const Contact = () => {
               Need to Order Quickly?
             </h2>
             <p className="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
-              Send us a message on WhatsApp at +91 80723 61484 for instant ordering and customer support
+              Send us a message on WhatsApp at +91 8072361484 for instant ordering and customer support
             </p>
-            <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center space-x-2 mx-auto">
+            <button 
+              onClick={() => window.open('https://wa.me/918072361484', '_blank')}
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center space-x-2 mx-auto"
+            >
               <MessageCircle className="w-5 h-5" />
               <span>Order via WhatsApp</span>
             </button>

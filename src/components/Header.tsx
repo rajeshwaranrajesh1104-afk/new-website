@@ -27,9 +27,7 @@ const Header = () => {
 
   return (
     <motion.header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
-      }`}
+      className="fixed top-0 w-full z-50 transition-all duration-300 bg-emerald-800/95 backdrop-blur-md shadow-lg"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
@@ -45,9 +43,7 @@ const Header = () => {
             >
               <Leaf className="w-5 h-5 lg:w-6 lg:h-6 text-white" />
             </motion.div>
-            <span className={`text-xl lg:text-2xl font-bold tracking-tight ${
-              isScrolled ? 'text-stone-800' : 'text-white'
-            } group-hover:text-emerald-700 transition-colors`}>
+            <span className="text-xl lg:text-2xl font-bold tracking-tight text-white group-hover:text-emerald-300 transition-colors">
               Soul Sip Malts
             </span>
           </Link>
@@ -58,16 +54,16 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`relative text-sm font-medium transition-colors hover:text-emerald-700 ${
+                className={`relative text-sm font-medium transition-colors hover:text-emerald-300 ${
                   location.pathname === item.path
-                    ? 'text-emerald-700'
-                    : isScrolled ? 'text-stone-700' : 'text-white'
+                    ? 'text-emerald-300'
+                    : 'text-white'
                 }`}
               >
                 {item.name}
                 {location.pathname === item.path && (
                   <motion.div
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-emerald-700"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-emerald-300"
                     layoutId="activeTab"
                   />
                 )}
@@ -78,9 +74,7 @@ const Header = () => {
           {/* Cart & Mobile Menu Button */}
           <div className="flex items-center space-x-4">
             <motion.button
-              className={`p-2 rounded-lg transition-colors ${
-                isScrolled ? 'text-stone-700 hover:bg-stone-100' : 'text-white hover:bg-white/10'
-              }`}
+              className="p-2 rounded-lg transition-colors text-white hover:bg-white/10"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -90,9 +84,7 @@ const Header = () => {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`lg:hidden p-2 rounded-lg transition-colors ${
-                isScrolled ? 'text-stone-700 hover:bg-stone-100' : 'text-white hover:bg-white/10'
-              }`}
+              className="lg:hidden p-2 rounded-lg transition-colors text-white hover:bg-white/10"
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -104,7 +96,7 @@ const Header = () => {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            className="lg:hidden bg-white/95 backdrop-blur-md border-t border-stone-200"
+            className="lg:hidden bg-emerald-800/95 backdrop-blur-md border-t border-emerald-700"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
@@ -116,10 +108,10 @@ const Header = () => {
                   key={item.name}
                   to={item.path}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
+                  className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors text-white ${
                     location.pathname === item.path
-                      ? 'bg-emerald-100 text-emerald-700'
-                      : 'text-stone-700 hover:bg-stone-100'
+                      ? 'bg-emerald-700 text-emerald-200'
+                      : 'hover:bg-emerald-700'
                   }`}
                 >
                   {item.name}

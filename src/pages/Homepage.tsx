@@ -11,7 +11,7 @@ const Homepage = () => {
       id: 1,
       name: 'Fig Malt',
       image: 'https://images.pexels.com/photos/4198018/pexels-photo-4198018.jpeg?auto=compress&cs=tinysrgb&w=400',
-      price: '₹390',
+      price: '₹399/-',
       benefits: ['Rich in nutrients & fiber', 'Supports digestion', 'Strengthens bones', 'Boosts skin health'],
       description: 'Premium organic fig blend with traditional spices for natural energy and wellness. 200g pack.'
     },
@@ -19,7 +19,7 @@ const Homepage = () => {
       id: 2,
       name: 'Banana Flower Malt',
       image: 'https://images.pexels.com/photos/5966630/pexels-photo-5966630.jpeg?auto=compress&cs=tinysrgb&w=400',
-      price: '₹390',
+      price: '₹399/-',
       benefits: ['Regulates menstrual cycle', 'Improves enzyme activity', 'Aids digestion & kidney health'],
       description: 'Ancient banana flower remedy crafted for women\'s wellness and hormonal balance. 200g pack.'
     },
@@ -27,7 +27,7 @@ const Homepage = () => {
       id: 3,
       name: 'ABC Malt',
       image: 'https://images.pexels.com/photos/4198015/pexels-photo-4198015.jpeg?auto=compress&cs=tinysrgb&w=400',
-      price: '₹390',
+      price: '₹399/-',
       benefits: ['Rich in natural energy', 'Supports blood health', 'Kid-friendly nutrition'],
       description: 'Apple, Beetroot, Carrot blend perfect for kids and families. Great for smoothies and baking. 200g pack.'
     }

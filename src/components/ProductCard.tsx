@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ShoppingCart, Heart, Star } from 'lucide-react';
+import { openWhatsAppOrder } from '../utils/whatsapp';
 
 interface Product {
   id: number;
@@ -17,6 +18,10 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product, index }) => {
+  const handleOrderClick = () => {
+    openWhatsAppOrder(product.name);
+  };
+
   return (
     <motion.div
       className="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all duration-300"
@@ -66,12 +71,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index }) => {
               Learn More
             </button>
             <motion.button
+              onClick={handleOrderClick}
               className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <ShoppingCart className="w-4 h-4" />
-              <span className="text-sm font-medium">Add to Cart</span>
+              <span className="text-sm font-medium">Order Now</span>
             </motion.button>
           </div>
         </div>

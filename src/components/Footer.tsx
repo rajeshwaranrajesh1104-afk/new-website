@@ -46,10 +46,10 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-white font-semibold">Our Malts</h3>
             <div className="space-y-2">
-              <a href="#" className="block text-stone-400 hover:text-emerald-400 transition-colors">Fig Malt - ₹390</a>
-              <a href="#" className="block text-stone-400 hover:text-emerald-400 transition-colors">Banana Flower Malt - ₹390</a>
-              <a href="#" className="block text-stone-400 hover:text-emerald-400 transition-colors">ABC Malt - ₹390</a>
-              <a href="#" className="block text-stone-400 hover:text-emerald-400 transition-colors">Golden Milk - ₹390 (New!)</a>
+              <a href="#" className="block text-stone-400 hover:text-emerald-400 transition-colors">Fig Malt - ₹399/-</a>
+              <a href="#" className="block text-stone-400 hover:text-emerald-400 transition-colors">Banana Flower Malt - ₹399/-</a>
+              <a href="#" className="block text-stone-400 hover:text-emerald-400 transition-colors">ABC Malt - ₹399/-</a>
+              <a href="#" className="block text-stone-400 hover:text-emerald-400 transition-colors">Golden Milk - ₹399/- (New!)</a>
             </div>
           </div>
 

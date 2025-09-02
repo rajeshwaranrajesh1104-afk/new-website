@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Filter, Search, ShoppingCart, Star, Heart } from 'lucide-react';
+import { openWhatsAppOrder } from '../utils/whatsapp';
 
 const Shop = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -11,7 +12,7 @@ const Shop = () => {
       id: 1,
       name: 'Fig Malt',
       image: 'https://images.pexels.com/photos/4198018/pexels-photo-4198018.jpeg?auto=compress&cs=tinysrgb&w=400',
-      price: '₹390',
+      price: '₹399/-',
       originalPrice: null,
       rating: 4.8,
       reviews: 156,
@@ -25,7 +26,7 @@ const Shop = () => {
       id: 2,
       name: 'Banana Flower Malt',
       image: 'https://images.pexels.com/photos/5966630/pexels-photo-5966630.jpeg?auto=compress&cs=tinysrgb&w=400',
-      price: '₹390',
+      price: '₹399/-',
       originalPrice: null,
       rating: 4.9,
       reviews: 203,
@@ -39,7 +40,7 @@ const Shop = () => {
       id: 3,
       name: 'ABC Malt',
       image: 'https://images.pexels.com/photos/4198015/pexels-photo-4198015.jpeg?auto=compress&cs=tinysrgb&w=400',
-      price: '₹390',
+      price: '₹399/-',
       originalPrice: null,
       rating: 4.7,
       reviews: 189,
@@ -53,7 +54,7 @@ const Shop = () => {
       id: 4,
       name: 'Golden Milk',
       image: 'https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?auto=compress&cs=tinysrgb&w=400',
-      price: '₹390',
+      price: '₹399/-',
       originalPrice: null,
       rating: 4.6,
       reviews: 134,
@@ -217,12 +218,13 @@ const Shop = () => {
                       )}
                     </div>
                     <motion.button
+                      onClick={() => openWhatsAppOrder(product.name)}
                       className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-xl flex items-center space-x-2 transition-colors font-medium"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
                       <ShoppingCart className="w-4 h-4" />
-                      <span>Add to Cart</span>
+                      <span>Order Now</span>
                     </motion.button>
                   </div>
                 </div>
