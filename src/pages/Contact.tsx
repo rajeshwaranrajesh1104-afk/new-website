@@ -224,7 +224,6 @@ const Contact = () => {
                     <span>Closed</span>
                   </div>
                 </div>
-              </div>
             </motion.div>
           </div>
         </div>
